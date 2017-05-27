@@ -1,6 +1,7 @@
 #ifndef IAMMUNITION_H
 # define IAMMUNITION_H
 
+# include "IObject.hpp"
 
 class IAmmunition : public IObject
 {

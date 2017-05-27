@@ -2,7 +2,7 @@
 # define IOBJECT_H
 
 # include <iostream>
-# include <Vector.hpp>
+# include "Vector.hpp"
 
 class IObject
 {
@@ -10,6 +10,9 @@ class IObject
         Vector          pos;
         bool            exists;
 
+        IObject();
+        ~IObject();
+        IObject(IObject const & src);
         std::string     getGraphicalCharacter();
         void            setGraphicalCharacter(std::string graf);
 
