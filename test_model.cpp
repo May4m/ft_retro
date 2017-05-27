@@ -3,6 +3,7 @@
 #include "models/Bomb.hpp"
 #include "models/Enemy.hpp"
 #include "models/Bullet.hpp"
+#include "models/Player.hpp"
 
 
 int main()

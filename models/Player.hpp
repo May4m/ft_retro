@@ -8,6 +8,12 @@ class Player : public IObject
     public:
         std::string     getName();
         int             getScore();
+        int             getNumOfBombs();
+        int             setNumOfBoms();
+
+        Player();
+        ~Player();
+        Player(Player const & src);
 
     private:
         std::string     name;
