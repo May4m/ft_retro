@@ -1,15 +1,20 @@
-#ifndef IAMMUNITION_H
-# define IAMMUNITION_H
+#ifndef AMMUNITION_H
+# define AMMUNITION_H
 
 # include "IObject.hpp"
 
-class IAmmunition : public IObject
+class Ammunition : public IObject
 {
     public:
-        IAmmunition(int life_delta);
-        IAmmunition();
+        Ammunition(Ammunition const &src);
+        Ammunition(int life_delta);
+        Ammunition();
+        ~Ammunition();
+        
+        Ammunition& operator=(Ammunition const &rhs);
 
         int     getLifeDelta() const;
+
     private:
         int     life_delta; // number of times the ammunition can be fired to kill the player
 };

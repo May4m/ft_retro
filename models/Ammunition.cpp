@@ -1,14 +1,28 @@
 #include "Ammunition.hpp"
 
 
-IAmmunition::IAmmunition(int _life_delta) : life_delta(_life_delta) {
+Ammunition::Ammunition(int _life_delta) : life_delta(_life_delta) {
     return ;
 }
 
-IAmmunition::IAmmunition() : life_delta(1) {
+Ammunition::Ammunition() : life_delta(1) {
     return ;
 }
 
-int IAmmunition::getLifeDelta() const {
+Ammunition::Ammunition(Ammunition const &src) {
+    *this = src;
+}
+
+Ammunition::~Ammunition() {
+    return ;
+}
+
+Ammunition& Ammunition::operator=(Ammunition const &rhs)
+{
+    this->life_delta = rhs.life_delta;
+    return *this;
+}
+
+int Ammunition::getLifeDelta() const {
     return life_delta;
 }
