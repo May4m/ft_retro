@@ -6,12 +6,11 @@
 
 int main()
 {
-    Vector a(2, 2);
-    Vector b(3, 2);
-
     Player A("Sizwe");
-    A.reduceLife(1);
+    Player B("Simba");
 
+
+    A.reduceLife(B.shootBomb());
     std::cout << A.getLives() << std::endl;
     return 0;
 }

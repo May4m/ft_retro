@@ -38,10 +38,21 @@ int         Player::setNumOfBoms() {
     return this->num_of_bombs;
 }
 
-Player& Player::operator=(Player const &rhs)
-{
+Player& Player::operator=(Player const &rhs) {
     this->name = rhs.name;
     this->score = rhs.score;
     this->num_of_bombs = rhs.num_of_bombs;
     return *this;
+}
+
+void        Player::reduceLife(int delta) {
+    this->num_of_lives -= delta;
+}
+
+int         Player::shootBullet() {
+    return 1;
+}
+
+int         Player::shootBomb() {
+    return 2;
 }
