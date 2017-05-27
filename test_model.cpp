@@ -6,6 +6,6 @@
 
 int main()
 {
-    
+    IObject a;
     return 0;
 }

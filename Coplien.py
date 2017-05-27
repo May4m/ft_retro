@@ -13,6 +13,7 @@ class %s
     public:
         %s();
         ~%s();
+        %s(%s const &src);
         %s& operator=(%s const &rhs);
 };
 
@@ -40,9 +41,9 @@ imp = \
 
 
 def make_file(class_name):
-    header_protector = class_name.upper() + "_H";
+    header_protector = class_name.upper() + "_H"
 
-    name_tuple = [header_protector, header_protector] + ([class_name] * 5)
+    name_tuple = [header_protector, header_protector] + ([class_name] * 6)
     name_tuple = map(str, name_tuple)
     name_tuple = tuple(name_tuple)
     header_ = header % name_tuple

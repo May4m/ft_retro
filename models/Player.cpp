@@ -1,6 +1,6 @@
 #include "Player.hpp"
 
-Player::Player() : death_resistance(4) {
+Player::Player() : num_of_lives(4) {
     return;
 }
 
@@ -30,6 +30,10 @@ int         Player::setNumOfBoms() {
     return this->num_of_bombs;
 }
 
-int         Player::getDeathResistance() {
-    return this->death_resistance;
+Player& Player::operator=(Player const &rhs)
+{
+    this->name = rhs.name;
+    this->score = rhs.score;
+    this->num_of_bombs = rhs.num_of_bombs;
+    return *this;
 }

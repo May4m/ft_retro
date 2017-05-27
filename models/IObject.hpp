@@ -13,8 +13,15 @@ class IObject
         IObject();
         ~IObject();
         IObject(IObject const & src);
+
+        IObject& operator=(IObject const &rhs);
+
         std::string     getGraphicalCharacter();
         void            setGraphicalCharacter(std::string graf);
+
+        void            move(Vector delta);
+        void            moveX(int x);
+        void            moveY(int y);
 
     private:
         std::string graphical_charactor;

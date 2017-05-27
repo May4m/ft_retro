@@ -8,6 +8,7 @@ class GameArena
     public:
         GameArena();
         ~GameArena();
+        GameArena(GameArena const &src);
         GameArena& operator=(GameArena const &rhs);
 };
 
