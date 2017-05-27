@@ -7,8 +7,14 @@
 class IObject
 {
     public:
-        Vector  pos;
-        bool    exists;
+        Vector          pos;
+        bool            exists;
+
+        std::string     getGraphicalCharacter();
+        void            setGraphicalCharacter(std::string graf);
+
+    private:
+        std::string graphical_charactor;
 };
 
 #endif

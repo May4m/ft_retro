@@ -7,7 +7,12 @@ class Player : public IObject
 {
     public:
         std::string     getName();
+        int             getScore();
+
     private:
-        std::string name;
+        std::string     name;
+        int             score;
+        int             num_of_bombs;
 };
+
 #endif
