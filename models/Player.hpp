@@ -10,6 +10,7 @@ class Player : public IObject
         int             getScore();
         int             getNumOfBombs();
         int             setNumOfBoms();
+        int             getDeathResistance();
 
         Player();
         ~Player();
@@ -19,6 +20,7 @@ class Player : public IObject
         std::string     name;
         int             score;
         int             num_of_bombs;
+        int             death_resistance;
 };
 
 #endif

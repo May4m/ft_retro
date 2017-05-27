@@ -1,6 +1,6 @@
 #include "Player.hpp"
 
-Player::Player() {
+Player::Player() : death_resistance(4) {
     return;
 }
 
@@ -28,4 +28,8 @@ int         Player::getNumOfBombs() {
 
 int         Player::setNumOfBoms() {
     return this->num_of_bombs;
+}
+
+int         Player::getDeathResistance() {
+    return this->death_resistance;
 }
