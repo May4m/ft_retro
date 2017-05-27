@@ -28,6 +28,10 @@ imp = \
     *this = src;
 }
 
+%s::%s() {
+    return ;
+}
+
 %s::~%s() {
     return ;
 }
@@ -35,6 +39,7 @@ imp = \
 %s& %s::operator=(%s const &rhs)
 {
     // do fields assignment here
+    (void)rhs;
     return *this;
 }
 """

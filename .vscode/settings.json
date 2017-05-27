@@ -23,6 +23,7 @@
         "limits": "cpp",
         "memory": "cpp",
         "ostream": "cpp",
-        "streambuf": "cpp"
+        "streambuf": "cpp",
+        "ios": "cpp"
     }
 }

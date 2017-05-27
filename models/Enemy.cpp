@@ -1,6 +1,7 @@
 #include "Enemy.hpp"
 
 Enemy::Enemy() {
+    this->setGraphicalCharacter("--^--");
     return;
 }
 

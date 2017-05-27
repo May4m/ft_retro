@@ -1,10 +1,11 @@
 #include "Player.hpp"
 
 Player::Player() : num_of_lives(4) {
-    return;
+    this->setGraphicalCharacter("(^-^)");  // default
+    return ;
 }
 
-Player::Player(std::string name) : num_of_lives(4), name(name) {
+Player::Player(std::string name) : name(name), num_of_lives(4) {
     return ;
 }
 

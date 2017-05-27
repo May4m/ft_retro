@@ -13,7 +13,7 @@ IObject::IObject(IObject const & src) {
 }
 
 IObject& IObject::operator=(IObject const &rhs) {
-    *this = rhs;
+    (void)rhs;
     return *this;
 }
 
