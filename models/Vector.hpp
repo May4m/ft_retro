@@ -1,6 +1,6 @@
 #ifndef VECTOR_H
 # define VECTOR_H
-
+# include <iostream>
 
 class Vector
 {
@@ -8,6 +8,9 @@ class Vector
         Vector();
         Vector(int x, int y);
 
+        int     x;
+        int     y;
+    
         int     getX();
         int     getY();
 
@@ -25,10 +28,7 @@ class Vector
 
         Vector operator/(const Vector& b);
         Vector operator/(const int factor);
-
-    private:
-            int x;
-            int y;
 };
 
+std::ostream & operator<<(std::ostream & o, Vector const &vec);
 #endif

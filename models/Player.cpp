@@ -4,6 +4,10 @@ Player::Player() : num_of_lives(4) {
     return;
 }
 
+Player::Player(std::string name) : num_of_lives(4), name(name) {
+    return ;
+}
+
 Player::~Player() {
     return;
 }
@@ -16,6 +20,10 @@ Player::Player(Player const & src)
 
 std::string Player::getName() {
     return this->name;
+}
+
+int         Player::getLives() {
+    return this->num_of_lives;
 }
 
 int         Player::getScore() {

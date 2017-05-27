@@ -43,3 +43,9 @@ Vector Vector::operator/(const Vector& b) {
 Vector Vector::operator/(const int factor) {
     return Vector(this->x / factor, this->y / factor);
 }
+
+std::ostream &operator<<(std::ostream &os, Vector const &vec)
+{
+    os << "Vector<" << vec.x << ", " << vec.y << ">";
+    return os;
+}
