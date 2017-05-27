@@ -1,4 +1,4 @@
-#include "IAmmunition.hpp"
+#include "Ammunition.hpp"
 
 
 IAmmunition::IAmmunition(int _life_delta) : life_delta(_life_delta) {
